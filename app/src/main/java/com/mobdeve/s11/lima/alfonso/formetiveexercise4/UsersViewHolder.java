@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import org.jetbrains.annotations.NotNull;
 
 public class UsersViewHolder extends RecyclerView.ViewHolder {
-    private TextView tvUsername, tvName, tvDesc;
+    private TextView tvUsername, tvName, tvDesc, tvNumber;
 
 
     public UsersViewHolder(@NonNull @NotNull View itemView) {
@@ -18,6 +18,7 @@ public class UsersViewHolder extends RecyclerView.ViewHolder {
         this.tvUsername = itemView.findViewById(R.id.tv_item_username);
         this.tvName = itemView.findViewById(R.id.tv_item_name);
         this.tvDesc = itemView.findViewById(R.id.tv_item_description);
+        this.tvNumber = itemView.findViewById(R.id.tv_item_number);
     }
 
     public void setTvUsername(String username){
@@ -30,6 +31,10 @@ public class UsersViewHolder extends RecyclerView.ViewHolder {
 
     public void setTvDesc(String desc){
         this.tvDesc.setText(desc);
+    }
+
+    public void setTvNumber(String number){
+        this.tvNumber.setText(number);
     }
 
 

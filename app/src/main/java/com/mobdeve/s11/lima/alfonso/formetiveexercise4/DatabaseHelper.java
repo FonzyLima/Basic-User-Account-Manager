@@ -55,7 +55,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         if(data.getCount() != 0){
             while(data.moveToNext()){
-                dataUsers.add(new Users(data.getString(1),data.getString(2),data.getString(3)));
+                dataUsers.add(new Users(data.getString(1),data.getString(2),data.getString(3),data.getString(0)));
             }
         }
 

@@ -36,6 +36,7 @@ public class UsersAdapter extends RecyclerView.Adapter<UsersViewHolder> {
         holder.setTvDesc(this.dataUsers.get(position).getDescription());
         holder.setTvName(this.dataUsers.get(position).getName());
         holder.setTvUsername(this.dataUsers.get(position).getUsername());
+        holder.setTvNumber(this.dataUsers.get(position).getNumber());
 
     }
 
